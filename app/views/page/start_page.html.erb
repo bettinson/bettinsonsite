@@ -1,2 +1,42 @@
-<h1>Page#start_page</h1>
-<p>Find me in app/views/page/start_page.html.erb</p>
+<style type="text/css">
+p{ 
+	color:#d1644c; 
+	margin-right: auto;
+	margin: 10px;
+	font-size: larger;
+	line-height: normal;
+}
+</style>
+
+<style type="text/css">
+h1{ 
+	color:#2984c8; 
+	font-size: 15;
+	margin-right: auto;
+	font-variant: small-caps;
+	font: 48px/36px helvetica;
+	margin-left: inherit;
+}
+</style>
+<style type="text/css">
+alink
+{
+	color:#2984c8;
+	font-size: large;
+	font: 48px/36px helvetica;
+	font-variant: small-caps;
+	font-weight: 100;
+}
+</style>
+<body>
+<h1>Hey, I'm Matt Bettinson.</h1>
+
+<p>I'm a 16 year old developer who likes to try new things. Lets get in touch.</p>
+<alink>
+	<p><a href="<%= @email %>">email</a></p>
+	<p><a href="<%= @twitter %>">twitter</a></p>
+	<p><a href="<%= @github %>">github</a></p>
+	<p><a href="<%= @soundcloud %>">soundcloud</a></p>
+	<p><a href="<%= @dribbble %>">dribbble</a></p>
+</alink>
+</body>
