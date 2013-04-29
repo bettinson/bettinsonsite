@@ -5,5 +5,6 @@ class PageController < ApplicationController
     @dribbble = "http://www.dribbble.com/bettinson"
     @soundcloud = "http://www.soundcloud.com/mattbettinson"
     @email = "mailto:mattbettinson@me.com"
+    @bloglink = "http://www.github.com/bettinson/bettinsonsite"
   end
 end

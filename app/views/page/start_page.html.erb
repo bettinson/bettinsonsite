@@ -1,12 +1,14 @@
 <style type="text/css">
 body
 {
-	
 	background-position:right top;
+	background-color:#ffffff;
+
 }
 
-h2{ 
-	color:#3b3a3a; 
+
+h2{
+	color:#3b3a3a;
 	margin-right: auto;
 	margin: 10px;
 	font-size: larger;
@@ -15,20 +17,36 @@ h2{
 	text-decoration : none;
 	line-height: 1;
 }
+
+
 a:link {color: #000000; text-decoration: underline; }
-a:visited {color: #c6c3c3; text-decoration: underline; }
+a:visited {color: #797979; text-decoration: underline; }
 </style>
 <style type="text/css">
-h1{ 
-	background-color: #cecdd0;
+h1{
+	background-color: #3b84c4;
 	background-position: 100% 50%;
-	color:#3b3a3a; 
+	color:#3a3a3a;
 	font-size: 15;
 	margin-right: auto;
 	font-variant: small-caps;
 	font: 48px/36px Avenir;
 	line-height: 1.5;
 	margin-left: inherit;
+}
+
+h3{
+	font-size: smaller;
+	font: 20px/10px Avenir;
+	margin: 10px;
+
+}
+
+highlighted {
+	color:#000000;
+	background-position:right bottom;
+	background-color:#fff494;
+
 }
 </style>
 <html>
@@ -39,11 +57,17 @@ h1{
 		<h1>Hey, I'm Matt Bettinson.</h1>
 	</head>
 	<body>
-		<h2>I'm a developer and student. You can find more about me here:</h2>
+		<h2>I'm a developer, aspiring designer, and student. You can find more about me here:</h2>
 		<h2>
-			<p><a href="<%= @email %>">email</a> . <a href="<%= @twitter %>">twitter</a> . <a href="<%= @github %>">github</a> . <a href="<%= @soundcloud %>">soundcloud</a> . <a href="<%= @dribbble %>">dribbble</a> </p>
-		
+			<p><a href="<%= @twitter %>">twitter</a> . <a href="<%= @github %>">github</a> . <a href="<%= @soundcloud %>">soundcloud</a> . <a href="<%= @dribbble %>">dribbble</a> <br> <br>
+				<highlighted> Lets <a href="<%= @email %>">get in touch</a>.
+
+							</highlighted>
+			</p>
+
 		</h2>
+
 	</body>
 	</div>
+
 </html>
